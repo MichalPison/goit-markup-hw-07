@@ -31,6 +31,11 @@
                 <li><a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
+        <button type="button" class="js-open-menu">
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -251,6 +256,64 @@
       </div>
     </div>
   </footer>
+
+  <div class="mobile-menu js-menu-container">
+    <button type="button" class="modal-close-button js-close-menu">
+      <svg width="8" height="8">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav>
+      <ul class="nav-mobile list">
+        <li><a href="./index.html" class="link marked nav-mobile-links">Studio</a></li>
+        <li><a href="./portfolio.html" class="link nav-mobile-links">Portfolio</a></li>
+        <li><a href="" class="link nav-mobile-links">Contacts</a></li>
+      </ul>
+    </nav>
+    <address class="address-mobile">
+      <ul class="contact-mobile list">
+        <li><a href="tel:+110001111111" class="tel link">+11 (000) 111-11-11</a></li>
+        <li><a href="mailto:info@devstudio.com" class="link mail">info@devstudio.com</a></li>
+      </ul>
+    </address>
+    <div class="sm-mobile">
+      <ul class="list sm-ul-mobile">
+        <li class="sm-li-mobile">
+          <a href="" class="social-media-icon link">
+            <svg with="24" height="24" class="social-icon">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="sm-li-mobile">
+          <a href="" class="social-media-icon link">
+            <svg with="24" height="24" class="social-icon">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="sm-li-mobile">
+          <a href="" class="social-media-icon link">
+            <svg with="24" height="24" class="social-icon">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="sm-li-mobile">
+          <a href="" class="social-media-icon link">
+            <svg with="24" height="24" class="social-icon">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous">
+    </script>
+  <script defer src="./js/mobile-menu.js"></script>
 
 </body>
 </html>

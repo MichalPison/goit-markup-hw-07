@@ -556,6 +556,9 @@ ol {
     margin-left: 16px;
 }
 
+/*------portfolio---------*/
+
+
 @media screen and (min-width: 428px) {
     .container {
         width: 428px;
@@ -791,5 +794,5 @@ ol {
     }
 }
 
-/*----------tablet---------*/
+/*----------portfolio---------*/
 
