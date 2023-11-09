@@ -450,6 +450,111 @@ ol {
     border: 1px solid var(--pressed-state-color);
     color: var(--pressed-state-color);
 }
+.footer {
+    background-color: var(--dark-color);
+    padding: 100px 0;
+}
+.footer-text {
+    color: var(--light-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    max-width: 264px;
+}
+
+.footer-social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-brand-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon {
+    fill: var(--light-color);
+}
+
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+    background-color: #31d0aa;
+}
+
+.social-media-heading {
+    color: var(--white-background-color);
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+.footer-subscribe-text {
+    color: var(--white-background-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+.footer-social-media {
+    display: flex;
+    gap: 16px;
+}
+.form-footer {
+    display: flex;
+    gap: 24px;
+}
+.footer-input {
+    background-color: transparent;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--white-background-color);
+    padding-left: 16px;
+    color: var(--white-background-color);
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.48px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer-input::placeholder {
+    color: var(--white-background-color);
+}
+
+.footer-input:focus {
+    outline: none;
+    color: var(--white-background-color);
+}
+
+.footer-subscribe-button {
+    display: flex;
+    min-width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--primary-brand-color);
+    color: var(--white-background-color);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+    background-color: var(--pressed-state-color);
+}
+
+.footer-svg-button {
+    margin-left: 16px;
+}
 
 @media screen and (min-width: 428px) {
     .container {
@@ -470,28 +575,6 @@ ol {
 }
 /*-----------mobile----------*/
 @media screen and (max-width: 767px) {
-    
-    .js-open-menu {
-        border: none;
-        background-color: transparent;
-        display: flex;
-        padding: 24px 0;
-        }
-    .js-menu-container {
-        background-color: var(--white-background-color);
-        z-index: 999;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        transform: translateX(100%);
-        transition: transform 250ms ease-in-out;
-    }
-    
-    .js-menu-container.is-open {
-        transform: translateX(0);
-    }
     .section-one {
         display: flex;
         background-color: var(--dark-color);
@@ -603,5 +686,71 @@ ol {
         column-gap: 16px;
         row-gap: 72px;
     }
+    .container-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 72px;
+    }
+    .footer-link {
+        display: block;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .social-media-heading {
+        display: block;
+        text-align: center;
+    }
+    .form-footer{
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+    }
+    .footer-subscribe-text {
+        display: block;
+        text-align: center;     
+    }
+    .footer-input{
+       width: 398px;
+    }
+    .js-open-menu {
+        border: none;
+        background-color: transparent;
+        display: flex;
+        padding: 24px 0;
+    }
+    .js-menu-container {
+        background-color: var(--white-background-color);
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+    }
+    .js-menu-container.is-open {
+        transform: translateX(0);
+    }
+    .nav-mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 80px 40px;
+        gap: 40px
+    }
     
+    .nav-mobile-links {
+        color: var(--dark-color);
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+    }
+    .marked {
+        color: var(--pressed-state-color);
+    }
+   
 }
