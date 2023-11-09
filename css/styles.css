@@ -752,5 +752,44 @@ ol {
     .marked {
         color: var(--pressed-state-color);
     }
-   
+    .contact-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;    
+    }
+    .address-mobile {
+        margin-left: 40px;
+        margin-right: 35px;
+        padding-top: 286px;
+        padding-bottom: 48px;
+    }
+    .tel {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+        color: var(--primary-brand-color);
+    }
+    .mail {
+        color: var(--text-color);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.4px;           
+    }
+    .sm-mobile {
+        margin-left: 40px;
+        
+    }
+    .sm-ul-mobile {    
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 56px;
+    }
 }
+
+/*----------tablet---------*/
+
