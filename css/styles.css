@@ -670,6 +670,14 @@ ol {
         width: 1158px;
     }
 }
+@media screen and (max-width: 428px) {
+    .modal-container {
+        max-width: 300px;
+    }
+    .footer-input {
+        max-width: 300px;
+    }
+}
 /*-----------mobile----------*/
 @media screen and (max-width: 767px) {
     .section-one {
