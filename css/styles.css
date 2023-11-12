@@ -943,30 +943,30 @@ ol {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         display: inline-block;
     }
-        .navi-links {
-            display: flex;
-            gap: 40px;
-        }
-        .address-links .link {
-            font-style: normal;
-            color: var(--text-color);
-            font-size: 12px;
-            line-height: 1.17;
-            letter-spacing: 0.48px;
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
+    .navi-links {
+        display: flex;
+        gap: 40px;
+    }
+    .address-links .link {
+        font-style: normal;
+        color: var(--text-color);
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.48px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
     
-        .address {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+    .address {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     
-        .address-links {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
+    .address-links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
     .navi-links,
     .nav-studio,
     .nav-portfolio {
@@ -1118,5 +1118,31 @@ ol {
     .modal-container {
         width: 408px;
         padding: 72px 24px 24px 24px;
+    }
+    /*------portfolio--------*/
+    .portfolio-section {
+        padding: 64px 0 96px;
+    }
+    .portfolio-button {
+        padding: 12px 24px;
+    }
+    .button-list {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+    .portfolio-image {
+        width: calc((100% - 24px) / 2);
+    }
+    .portfolio-image-text {
+        display: flex;
+        padding: 32px 0;
+        padding-left: 16px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
     }
 }
