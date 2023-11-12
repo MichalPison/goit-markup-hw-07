@@ -670,6 +670,7 @@ ol {
         width: 1158px;
     }
 }
+
 @media screen and (max-width: 428px) {
     .modal-container {
         max-width: 300px;
@@ -677,6 +678,7 @@ ol {
     .footer-input {
         max-width: 300px;
     }
+    
 }
 /*-----------mobile----------*/
 @media screen and (max-width: 767px) {
@@ -888,13 +890,14 @@ ol {
     }
     .sm-mobile {
         margin-left: 40px;
+        margin-right: 40px;
         
     }
 
     .sm-ul-mobile {    
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 56px;
+       display: flex;
+       align-items: flex-start;
+       gap: 24px;
     }
     .button-list {
         display: flex;
